@@ -131,5 +131,9 @@ add_files -fileset constrs_1 -norecurse ./camera/mzed.xdc
 launch_runs impl_1 -to_step write_bitstream -jobs [exec "nproc"]
 wait_on_run impl_1 
 
+file mkdir /home/arthur/Documents/cdo2/ov7670/ov7670.sdk
+file copy -force /home/arthur/Documents/cdo2/ov7670/ov7670.runs/impl_1/platform_wrapper.sysdef /home/arthur/Documents/cdo2/ov7670/ov7670.sdk/platform_wrapper.hdf
+
+
 start_gui
 

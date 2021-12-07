@@ -1,1 +1,1 @@
-# ovmzed
+# OV7670 MiniZed
